@@ -33,12 +33,12 @@ ul {
 }
 #welcome-section {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 .presentacion {
   min-width: 500px;
   background-color: grey;
-  height: 510px;
+  height: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,7 +61,9 @@ ul {
   border-radius: 23px;
   margin: 8px 0px;
 }
-
+.title {
+    margin: 0px;
+}
 .tile-name, .vsco-profile, a {
   text-align: center;
   width: 80%;
@@ -113,7 +115,7 @@ ul {
   .contenedor-redes {
     width: 80%;
     justify-content: center;
-    margi: auto;
+    margin: auto;
   }
   
   .nav {
@@ -122,5 +124,9 @@ ul {
   
   .name {
     font-size: 23px;
+  }
+
+  #welcome-section {
+    height: 5vh;
   }
 }
