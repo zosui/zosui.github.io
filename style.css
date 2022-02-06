@@ -1,78 +1,126 @@
 * {
 	font-family: 'Open Sans', sans-serif;
-  text-decoration: none;
-  color: black;
-}
-
-header {
-  text-align: left;
-	margin-left: 20px;
-	font-size: 36px;
-	font-weight: bold;
 }
 
 body {
-	display: flex;
-	position: absolute;
+	margin: auto;
 }
 
-#nav {
-	width: 15%;
-	border-style: solid;
-	border-color: rgba(0, 0, 0, 0.561);
+.nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: #1F618D;
+}
+ul {
+  background-color: #1F618D
+}
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 24px 0px 0px;
 }
 
-.nav-bar-item {
+.nav-link {
+  font-size: 20px;
+  font-weight: bolder;
   text-decoration: none;
-  color: black;
-	text-align: left;
-	margin: 0px 25px 35px 0px;
-	border-style:dotted;
-	border-color: rgba(0, 0, 0, 0.685);
+  color: white;
+  margin: 20px
 }
-
-main {
-	text-align: justify;
-	width: 85%;
-	margin: 0px 90px 0px 40px;
+#welcome-section {
+  width: 100%;
+  height: 100vh;
 }
-
-.card {
-	padding: 5px 15px 5px 15px;
-	border-style: solid;
-	border-color: rgba(0, 0, 139, 0.555);
-	border: 0px 0px 0px 14px;
-	align-items: center;
-	width: 100%;
-	font-family: monospace;
-	background-color: #ebe9e9c9;
-	border-radius: 6px;
-}
-
-table {
-  background: #ebe9e9c9;
-  text-align: center;
-  border-radius: 4px;
-}
-
-thead {
-  text-align: center;
-  font-weight: bold;
-}
-
-td {
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.685);
-  border-width: 2px
+.presentacion {
+  min-width: 500px;
+  background-color: grey;
+  height: 510px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    display: flex;
-    flex-direction: column;
+.name {
+  font-size: 40px
+}
+
+.description {
+  text-align: justify;
+  margin: 0px 90px
+}
+
+.fotos {
+  width: 220px;
+  height:330px;
+  border-radius: 23px;
+  margin: 8px 0px;
+}
+
+.tile-name, .vsco-profile, a {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder
+}
+
+#projects {
+  margin: 12px;
+}
+
+.project-tile {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.logo {
+  width: 50px;
+  margin: 20px;
+  border-style: solid;
+  border-radius: 50%;
+}
+
+.contacto {
+  margin: 32px 0px 0px 0px;
+  text-align: center;
+}
+
+.contenedor-redes {
+  width: 50%;
+  display: flex;
+  margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .project-tile {
+    width: 100%;
   }
-  header {
-    text-align: center;
+  .fotos {
+    width: 200px;
+    height: 260px;
+  }
+  
+  .contenedor-redes {
+    width: 80%;
+    justify-content: center;
+    margi: auto;
+  }
+  
+  .nav {
+    justify-content: center;
+  }
+  
+  .name {
+    font-size: 23px;
   }
 }
